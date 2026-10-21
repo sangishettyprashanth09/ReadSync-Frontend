@@ -109,3 +109,23 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+/* Normal PDF page */
+.pdf-page-light canvas {
+  filter: none;
+}
+
+/* Dark PDF page */
+.pdf-page-dark canvas {
+  filter: invert(0.88) hue-rotate(180deg);
+}
+.react-pdf__Page {
+  margin: 24px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.react-pdf__Page canvas {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
